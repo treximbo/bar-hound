@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="mapInject.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body onload="getLocation();">
+       <div style="position: relative; align-items: center; justify-content: space-evenly; padding: 20px 0; text-align: center; background-color: #000000; color: #ffffff; font-family: 'Hind', sans-serif;">
+            <div style="position:absolute; left: 20px;" onclick="openHamburger()">
+                <svg viewBox="0 0 100 80" width="40" height="40" fill="#ffffff">
+                    <rect width="100" height="10"></rect>
+                    <rect y="30" width="100" height="10"></rect>
+                    <rect y="60" width="100" height="10"></rect>
+                  </svg>
+            </div>
+            <div style="display: inline-block;font-size: 36px;">BAR HOUND</div>
+        </div>
+        <div id="map" style="width: 100%; height: 300px;"></div>
+        <div style="text-align: center;">Bars near me</div>
+    </body>
+</html>
